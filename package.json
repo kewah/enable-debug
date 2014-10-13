@@ -1,6 +1,6 @@
 {
   "name": "enable-debug",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Enable debug logs via query-string",
   "main": "index.js",
   "scripts": {
