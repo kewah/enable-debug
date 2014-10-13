@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+</head>
+<body>
+  <script src="bundle.js"></script>
+  <script>
+    if (!require('query-string').parse(window.location.search).debug) {
+      window.location.search = '?debug=foo,bar';
+    }
+
+    var enableDebug = require('enable-debug');
+    enableDebug(['arrItem'], true);
+
+    var debug = require('debug');
+    debug('arrItem')('yes');
+    debug('nope')('no');
+    debug('foo')('yes');
+    debug('bar')('yes');
+
+    console.log('>> it should log: arrItem, foo, bar');
+  </script>
+</body>
+</html>

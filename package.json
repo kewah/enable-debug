@@ -1,0 +1,30 @@
+{
+  "name": "enable-debug",
+  "version": "0.0.1",
+  "description": "Enable debug logs via query-string",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm i && npm test",
+    "test": "browserify -r query-string -r debug -r ./index.js:enable-debug > bundle.js && open test.html"
+  },
+  "keywords": [
+    "debug",
+    "query",
+    "string"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "Antoine Lehurt",
+    "email": "hello@kewah.com",
+    "url": "http://kewah.com",
+    "twitter": "https://twitter.com/kewah"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nk-components/enable-debug"
+  },
+  "dependencies": {
+    "debug": "^2.0.0",
+    "query-string": "^1.0.0"
+  }
+}
